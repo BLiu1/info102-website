@@ -236,6 +236,10 @@ button[type=button] {
     padding: 0 8px;
     transition: background-color 0.1s, box-shadow 0.1s;
     white-space: nowrap;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
 }
 
 button[type=button]:active {
