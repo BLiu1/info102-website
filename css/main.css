@@ -88,9 +88,9 @@ body {
     color: white;
 }
 */
-/* ==========================
-    ALL: Material Blue Theme
-   ========================== */
+/* =================================
+    ALL: Material Blue/Orange Theme
+   ================================= */
 
 .header-container {
     border-bottom: 20px solid #1976D2;
@@ -112,8 +112,26 @@ nav a {
     background: #2196F3;
 }
 
+.header-container a,
+.footer-container a:hover,
+.main aside a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container a:hover,
+.footer-container a,
+.main aside a {
+    color: white;
+    text-decoration: underline;
+}
+
 .title {
     color: white;
+}
+
+.main-container a {
+    color: #FF9800;
 }
 
 /* ==============
@@ -181,6 +199,7 @@ nav a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab", serif;
+    line-height: 1.2;
 }
 
 h1.title {
@@ -190,22 +209,47 @@ h1.title {
     font-size: 2.5em;
 }
 
-.header-container a, .footer-container a {
-    color: white;
-    text-decoration: none;
+article h1 {
+    font-weight: 300;
 }
 
-.header-container a:hover, .footer-container a:hover {
-    text-decoration: underline;
+article h2 {
+    font-weight: 400;
 }
 
 .secondary {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.main-container a {
-    color: #448AFF;
+button[type=button] {
+    background: #FF9800;
+    border: 0;
+    border-radius: 2px;
+    height: 36px;
+    min-width: 64px;
+    margin: 0 8px 16px 8px;
+    padding: 0 8px;
+    transition: background-color 0.1s, box-shadow 0.1s;
+    white-space: nowrap;
 }
+
+button[type=button]:active {
+    background: #FFAB40;
+}
+
+button[type=button] > a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    line-height: 39px;
+}
+
+
+
+
+
+
 
 
 
@@ -262,6 +306,18 @@ h1.title {
 
     .header-container,
     .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+    button[type=button] {
+        -webkit-box-shadow: 0 2px 5px #aaa;
+           -moz-box-shadow: 0 2px 5px #aaa;
+                box-shadow: 0 2px 5px #aaa;
+    }
+
+    button[type=button]:hover {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
