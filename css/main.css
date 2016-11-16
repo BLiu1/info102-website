@@ -275,7 +275,13 @@ button[type=button] > a {
 
 /* Thanks, Smashing Mag */
 
+.footer-container h3 {
+    float: left;
+}
 
+.footer-container h3 + h3 {
+    float: right;
+}
 
 
 
