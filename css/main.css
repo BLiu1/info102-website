@@ -21,7 +21,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #BDBDBD;
-    margin: 1em 0;
+    margin: 2em 0;
     padding: 0;
 }
 
@@ -58,6 +58,7 @@ textarea {
    ========================================================================== */
 
 body {
+    background: url(../img/background.png);
     font: 16px/26px "Fira Sans", Helvetica, Helvetica Neue, Arial;
 }
 
@@ -254,9 +255,22 @@ button[type=button] > a {
     line-height: 39px;
 }
 
+article img {
+    width: 100%;
+}
+
+.embed-container.docs {
+    width: 100;
+    margin-bottom: 30px;
+}
+
+.embed-container.docs iframe {
+    width: 100%;
+}
+
 /* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ */
 
-.embed-container {
+.embed-container.slides {
     position: relative;
     padding-top: 56.25%;
     padding-bottom: 29px;
@@ -265,7 +279,7 @@ button[type=button] > a {
     margin-bottom: 30px;
 }
 
-.embed-container iframe {
+.embed-container.slides iframe {
     position: absolute;
     top: 0;
     left: 0;
