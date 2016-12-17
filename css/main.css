@@ -270,7 +270,8 @@ article img {
 
 /* https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ */
 
-.embed-container.slides {
+.embed-container.slides,
+.embed-container.video {
     position: relative;
     padding-top: 56.25%;
     padding-bottom: 29px;
@@ -279,12 +280,17 @@ article img {
     margin-bottom: 30px;
 }
 
-.embed-container.slides iframe {
+.embed-container.slides iframe,
+.embed-container.video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.embed-container.video {
+    padding-bottom: 0;
 }
 
 /* Thanks, Smashing Mag */
